@@ -63,7 +63,7 @@ ul {
 
 .container {
   text-align: center;
-  margin: 100px;
+  margin: 100px auto 25px;
 }
 
 .google-logo {
@@ -79,10 +79,8 @@ ul {
   display: flex;
   border: 1px solid #dfe1e5;
   box-shadow: none;
-  z-index: 3;
   height: 44px;
   margin: 0 auto;
-  margin-top: -77px;
   width: 582px;
   box-shadow: none;
   border-radius: 24px;
@@ -143,7 +141,7 @@ ul {
   color: rgba(0, 0, 0, 0.87);
   word-wrap: break-word;
   outline: none;
-  margin-top: -68px;
+  margin-top: -70px;
   font: 16px arial, sans-serif;
   line-height: 34px;
   height: 34px !important;
@@ -160,22 +158,44 @@ ul {
   background-color: transparent;
   height: 34px;
   -webkit-tap-highlight-color: transparent;
-  width: 100%;
+  width: 480px;
+}
+
+.voice-icon {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  outline: none;
+  width: 24px;
+  line-height: 44px;
+  padding: 0px 6px 4px;
+}
+
+.voice-icon span {
+  background: url(//web.archive.org/web/20191130234759im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png)
+    0 0 no-repeat;
+  height: 24px;
+  width: 24px;
+  background-size: 24px;
+  vertical-align: middle;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 18px;
+  margin-top: 18px;
 }
 
 .feelinglucky,
 .googlesearch {
-  background-color: #f8f9fa;
-  border: 1px solid #f8f9fa;
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
   border-radius: 4px;
-  color: #3c4043;
+  color: #5f6368;
   font-family: arial, sans-serif;
   font-size: 14px;
   margin: 11px 4px;
@@ -188,17 +208,27 @@ ul {
   user-select: none;
 }
 
+.feelinglucky:hover,
+.googlesearch:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
+}
+
 .footer {
+  position: fixed;
+  bottom: 0;
   margin: 0;
   padding: 0;
   overflow: hidden;
   border: 1px solid #dfe1e5;
   border-top: 1px solid #dadce0;
-  position: fixed;
-  bottom: 0;
   width: 100%;
   margin-left: -8px;
   line-height: 10px;
+  background-color: #f2f2f2;
 }
 
 .footerli {
